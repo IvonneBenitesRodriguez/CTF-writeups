@@ -16,9 +16,8 @@ The search of these three hidden "ingredients" on the system involves web enumer
 
 ## Methodology
 
-I followed a structured 5-phase Penetration Testing Process:<br/><br/> 
+I used a 4-phase Penetration Testing Process (the standard methodology contains 5 stages, but since I did not use any scanning tool in this challenge, I decided to skip the scanning stage.) :<br/><br/> 
 - Reconnaissance.<br/> 
-- Scanning.<br/>
 - Enumeration.<br/> 
 - Exploitation.<br/>
 - Post-exploitation/privilege escalation.<br/>
@@ -51,7 +50,7 @@ This manual, knowledge-based enumeration approach confirmed several existing fil
  For this challenge, manual enumeration based on common conventions was sufficient.
 
 
-### 4. Exploitation
+### 3. Exploitation
 
 Using the vulnerable endpoint identified during the enumeration phase, I was able to execute commands on the underlying operating system, gaining access as the `www-data` user (the default Apache web server user).
 
@@ -64,7 +63,7 @@ ls -la
 
 The first ingredient was found in a file with an obfuscated name inside the web directory (`/var/www/html`), reinforcing the importance of thoroughly reviewing all files, including ones with unconventional names.
 
-### 5. Post-Exploitation / Privilege Escalation
+### 4. Post-Exploitation / Privilege Escalation
 
 **Exploring system users:**
 
