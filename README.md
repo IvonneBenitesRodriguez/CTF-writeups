@@ -17,11 +17,11 @@ The search of these three hidden "ingredients" on the system involves web enumer
 ## Methodology
 
 I followed a structured 5-phase Penetration Testing Process:<br/><br/> 
-Reconnaissance.<br/> 
-Scanning.<br/>
-Enumeration.<br/> 
-Exploitation.<br/>
-Post-exploitation/privilege escalation.<br/>
+- Reconnaissance.<br/> 
+- Scanning.<br/>
+- Enumeration.<br/> 
+- Exploitation.<br/>
+- Post-exploitation/privilege escalation.<br/>
 
 ### 1. Reconnaissance
 
@@ -45,7 +45,7 @@ In my case, I applied theoretical knowledge of common web application structures
 This manual, knowledge-based enumeration approach confirmed several existing files and directories on the server, including a PHP endpoint that allowed command execution — which opened the door to the exploitation phase.
 
 <img src="./screenshots/5.png" width="600">
-
+<br/><br/>
 <strong>Note</strong>:<br/>
  In a real-world or more complex engagement, this manual approach would normally be complemented with automated tools like nmap (for port/service discovery) and gobuster or dirb (for directory brute-forcing), which are faster and more thorough than manual guessing.<br/><br/>
  For this challenge, manual enumeration based on common conventions was sufficient.
@@ -120,6 +120,6 @@ This allowed access to the third and final ingredient, completing the machine.
 - Linux terminal — `ls`, `cd`, `pwd`, `cat`, `less`, `whoami`, `sudo`
 
 ## Challenge Solved
-Here the challenge solved:
+Challenge solved: <br/><br/>
 <img src="./screenshots/RICK_MORTY_CTF.png" width="600">
 
